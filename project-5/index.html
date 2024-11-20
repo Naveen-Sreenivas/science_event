@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScienceFest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">ScienceFest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <header class="jumbotron text-center bg-light py-5">
+        <div class="container">
+            <h1>Welcome to ScienceFest 2024</h1>
+            <p class="lead">Explore the wonders of science through engaging events and activities!</p>
+        </div>
+    </header>
+
+    <!-- Featured Events Carousel -->
+    <div id="featuredEvents" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img style="height:58vh;" src="data:image/jpeg;base64,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" class="d-block w-100" alt="Event 1">
+                <div class="carousel-caption">
+                    <h1>Astro Nights</h1>
+                    <p style="font-size: xx-large;">Experience the universe like never before.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="height:58vh;" src="https://www.motherjones.com/wp-content/uploads/2023/11/Robot-Storytime-Horizontal_2000.png?w=1200&h=630&crop=1" class="d-block w-100" alt="Event 2">
+                <div class="carousel-caption">
+                    <h1 style="color: black;">Robotics Expo</h1>
+                    <p style="font-size: xx-large; color: black;">Discover groundbreaking technology.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#featuredEvents" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#featuredEvents" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <footer class="bg-primary text-center text-white py-3">
+        <p>&copy; 2024 ScienceFest. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
